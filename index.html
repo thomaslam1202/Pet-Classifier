@@ -2,16 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PetVision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetVision 🐾</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>PetVision 🐾</h1>
-    <p>Upload a cat or dog photo to identify the breed</p><br>
-    <p>This project is for learning purposes only; results may be inaccurate.</p>
-    <input type="file" id="upload" accept="image/*" />
-    <div id="preview"></div>
-    <div id="result"></div>
+    <div class="container">
+        <h1>🐾 PetVision</h1>
+        <p class="subtitle">Upload a pet photo to identify the breed</p>
+
+        <div class="upload-area" id="uploadArea">
+            <input type="file" id="upload" accept="image/*" hidden />
+            <div class="upload-placeholder" id="uploadPlaceholder">
+                <span class="upload-icon">📁</span>
+                <p>Click to upload or drag & drop</p>
+                <p class="upload-hint">JPG, PNG supported</p>
+            </div>
+            <img id="preview" src="" alt="Preview" hidden />
+        </div>
+
+        <button class="predict-btn" id="predictBtn" disabled>Analyze Pet</button>
+
+        <div class="result-card" id="resultCard" hidden>
+            <h2 id="className"></h2>
+            <div class="confidence-label">
+                <span>Confidence</span>
+                <span id="confidenceText"></span>
+            </div>
+            <div class="bar-track">
+                <div class="bar-fill" id="barFill"></div>
+            </div>
+        </div>
+
+        <div class="loading" id="loading" hidden>
+            <div class="spinner"></div>
+            <p>Analyzing your pet...</p>
+        </div>
+
+        <div class="error" id="error" hidden></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
