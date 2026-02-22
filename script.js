@@ -62,7 +62,7 @@ predictBtn.addEventListener("click", async () => {
     if (!selectedFile) return;
 
     // Show loading
-    loading.hidden = false;
+    loading.style.display = "flex";
     resultCard.hidden = true;
     error.hidden = true;
     predictBtn.disabled = true;
@@ -101,7 +101,7 @@ predictBtn.addEventListener("click", async () => {
         error.innerText = "⚠️ Could not reach the backend. The model may be waking up, please try again in 30 seconds.";
         error.hidden = false;
     } finally {
-        loading.hidden = true;
+        loading.style.display = "none";
         predictBtn.disabled = false;
     }
 });
