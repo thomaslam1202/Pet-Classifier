@@ -14,7 +14,7 @@ This project represents my first full end‑to‑end machine learning system, bu
 I trained a fine‑grained 38‑class cat and dog breed classifier using the Oxford-IIIT Pet Dataset, implemented with PyTorch and deployed as a live web application using FastAPI, Docker, Hugging Face Spaces, and a custom HTML/CSS/JavaScript frontend hosted on GitHub Pages.
 
 # 🚀 Project Highlights
-🔧 Model & Training
+##🔧 Model & Training
 - Architecture: EfficientNet‑B3 (pretrained on ImageNet)
 - Framework: PyTorch
 - Hardware: NVIDIA RTX 5060 Laptop GPU (CUDA)
