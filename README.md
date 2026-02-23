@@ -51,6 +51,7 @@ Backend
 - Exposes a /predict endpoint for image classification
 - API docs available at:
 https://thomaslam1202-petvision-backend.hf.space/docs
+
 Frontend
 - Hosted on GitHub Pages
 - Built with HTML, CSS, and JavaScript
