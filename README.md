@@ -34,11 +34,13 @@ To overcome this:
 - Leveraged EfficientNet’s pretrained feature extractor
 - Applied data augmentation
 - Cleaned and filtered confusing or mislabeled images
+  
 ⏱️ Training Time Explosion
 Switching from ResNet‑18 (20 seconds/epoch) to EfficientNet‑B3 (30 minutes/epoch) dramatically increased training time.
 Solution:
 - Enabled AMP mixed precision, cutting epoch time by ~90%
 - Allowed faster iteration and higher accuracy
+  
 🐱 Fine‑Grained Cat Breeds Are Hard
 Some cat breeds look extremely similar, making classification difficult.
 I manually inspected and filtered ambiguous images to help the model learn clearer patterns.
